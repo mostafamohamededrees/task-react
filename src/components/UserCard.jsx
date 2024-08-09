@@ -6,7 +6,7 @@ const UserCard = ({ user }) => {
     return (
         <div className="user-card">
             <Link to={`/user/${user.id}`} className="user-card-link" style={{ textDecoration: 'none', color: 'black' }} > <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`} />
-                <h3 className="user-card-link">{`${user.first_name} ${user.last_name}`}</h3>
+                <h3>{`${user.first_name} ${user.last_name}`}</h3>
             </Link>
         </div >
     );
